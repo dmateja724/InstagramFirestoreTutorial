@@ -19,6 +19,8 @@
 		493956AC274C7248005912DA /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493956AB274C7248005912DA /* ImageSelectorController.swift */; };
 		493956AE274C7250005912DA /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493956AD274C7250005912DA /* NotificationsController.swift */; };
 		493956B0274C7257005912DA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493956AF274C7257005912DA /* ProfileController.swift */; };
+		493956B2274C8573005912DA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493956B1274C8573005912DA /* FeedCell.swift */; };
+		493956B6274C8646005912DA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493956B5274C8646005912DA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		493956AB274C7248005912DA /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		493956AD274C7250005912DA /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		493956AF274C7257005912DA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		493956B1274C8573005912DA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		493956B5274C8646005912DA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		4939569E274C7004005912DA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				493956B5274C8646005912DA /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		493956A3274C7014005912DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				493956B1274C8573005912DA /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4939568F274C6FEB005912DA /* ViewController.swift in Sources */,
+				493956B2274C8573005912DA /* FeedCell.swift in Sources */,
 				493956AC274C7248005912DA /* ImageSelectorController.swift in Sources */,
 				493956AE274C7250005912DA /* NotificationsController.swift in Sources */,
 				493956AA274C723C005912DA /* SearchController.swift in Sources */,
@@ -212,6 +219,7 @@
 				493956B0274C7257005912DA /* ProfileController.swift in Sources */,
 				493956A8274C7233005912DA /* FeedController.swift in Sources */,
 				493956A6274C70A9005912DA /* MainTabController.swift in Sources */,
+				493956B6274C8646005912DA /* Extensions.swift in Sources */,
 				4939568D274C6FEB005912DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
