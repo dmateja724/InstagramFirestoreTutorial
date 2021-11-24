@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4918E9BF274DC2580086BA4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918E9BE274DC2580086BA4E /* LoginController.swift */; };
+		4918E9C1274DC2640086BA4E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918E9C0274DC2640086BA4E /* RegistrationController.swift */; };
+		4918E9C3274DCA4C0086BA4E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918E9C2274DCA4C0086BA4E /* CustomTextField.swift */; };
+		4918E9C5274DD1FF0086BA4E /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918E9C4274DD1FF0086BA4E /* AuthenticationViewModel.swift */; };
 		4939568B274C6FEB005912DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568A274C6FEB005912DA /* AppDelegate.swift */; };
 		4939568D274C6FEB005912DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568C274C6FEB005912DA /* SceneDelegate.swift */; };
 		4939568F274C6FEB005912DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568E274C6FEB005912DA /* ViewController.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4918E9BE274DC2580086BA4E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4918E9C0274DC2640086BA4E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		4918E9C2274DCA4C0086BA4E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4918E9C4274DD1FF0086BA4E /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		49395687274C6FEB005912DA /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4939568A274C6FEB005912DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4939568C274C6FEB005912DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4918E9BD274DC2480086BA4E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4918E9BE274DC2580086BA4E /* LoginController.swift */,
+				4918E9C0274DC2640086BA4E /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		4939567E274C6FEB005912DA = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +124,7 @@
 		493956A1274C7012005912DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4918E9BD274DC2480086BA4E /* Authentication */,
 				493956A5274C70A9005912DA /* MainTabController.swift */,
 				493956A7274C7233005912DA /* FeedController.swift */,
 				493956A9274C723C005912DA /* SearchController.swift */,
@@ -120,6 +138,7 @@
 		493956A2274C7013005912DA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4918E9C4274DD1FF0086BA4E /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				493956B1274C8573005912DA /* FeedCell.swift */,
+				4918E9C2274DCA4C0086BA4E /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,10 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4918E9C3274DCA4C0086BA4E /* CustomTextField.swift in Sources */,
 				4939568F274C6FEB005912DA /* ViewController.swift in Sources */,
+				4918E9BF274DC2580086BA4E /* LoginController.swift in Sources */,
 				493956B2274C8573005912DA /* FeedCell.swift in Sources */,
 				493956AC274C7248005912DA /* ImageSelectorController.swift in Sources */,
 				493956AE274C7250005912DA /* NotificationsController.swift in Sources */,
+				4918E9C5274DD1FF0086BA4E /* AuthenticationViewModel.swift in Sources */,
 				493956AA274C723C005912DA /* SearchController.swift in Sources */,
 				4939568B274C6FEB005912DA /* AppDelegate.swift in Sources */,
 				493956B0274C7257005912DA /* ProfileController.swift in Sources */,
@@ -221,6 +244,7 @@
 				493956A6274C70A9005912DA /* MainTabController.swift in Sources */,
 				493956B6274C8646005912DA /* Extensions.swift in Sources */,
 				4939568D274C6FEB005912DA /* SceneDelegate.swift in Sources */,
+				4918E9C1274DC2640086BA4E /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
