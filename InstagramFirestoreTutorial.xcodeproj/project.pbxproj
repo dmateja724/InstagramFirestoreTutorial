@@ -14,6 +14,8 @@
 		492CAD21274FF3B1003200E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 492CAD20274FF3B1003200E7 /* GoogleService-Info.plist */; };
 		492CAD23274FF54C003200E7 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD22274FF54C003200E7 /* ImageUploader.swift */; };
 		492CAD25274FF551003200E7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD24274FF551003200E7 /* AuthService.swift */; };
+		492CAD27275005A0003200E7 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD26275005A0003200E7 /* ProfileCell.swift */; };
+		492CAD29275005A7003200E7 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD28275005A7003200E7 /* ProfileHeader.swift */; };
 		4939568B274C6FEB005912DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568A274C6FEB005912DA /* AppDelegate.swift */; };
 		4939568D274C6FEB005912DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568C274C6FEB005912DA /* SceneDelegate.swift */; };
 		4939568F274C6FEB005912DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568E274C6FEB005912DA /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		492CAD20274FF3B1003200E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		492CAD22274FF54C003200E7 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		492CAD24274FF551003200E7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		492CAD26275005A0003200E7 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		492CAD28275005A7003200E7 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		49395687274C6FEB005912DA /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4939568A274C6FEB005912DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4939568C274C6FEB005912DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 				4918E9C0274DC2640086BA4E /* RegistrationController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		492CAD2A275005AD003200E7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				492CAD26275005A0003200E7 /* ProfileCell.swift */,
+				492CAD28275005A7003200E7 /* ProfileHeader.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		4939567E274C6FEB005912DA = {
@@ -179,6 +192,7 @@
 		493956A3274C7014005912DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				492CAD2A275005AD003200E7 /* Profile */,
 				493956B1274C8573005912DA /* FeedCell.swift */,
 				4918E9C2274DCA4C0086BA4E /* CustomTextField.swift */,
 			);
@@ -309,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4918E9C3274DCA4C0086BA4E /* CustomTextField.swift in Sources */,
+				492CAD29275005A7003200E7 /* ProfileHeader.swift in Sources */,
 				4939568F274C6FEB005912DA /* ViewController.swift in Sources */,
 				4918E9BF274DC2580086BA4E /* LoginController.swift in Sources */,
 				493956B2274C8573005912DA /* FeedCell.swift in Sources */,
@@ -323,6 +338,7 @@
 				493956B6274C8646005912DA /* Extensions.swift in Sources */,
 				492CAD23274FF54C003200E7 /* ImageUploader.swift in Sources */,
 				492CAD25274FF551003200E7 /* AuthService.swift in Sources */,
+				492CAD27275005A0003200E7 /* ProfileCell.swift in Sources */,
 				4939568D274C6FEB005912DA /* SceneDelegate.swift in Sources */,
 				4918E9C1274DC2640086BA4E /* RegistrationController.swift in Sources */,
 			);
