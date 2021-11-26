@@ -11,11 +11,17 @@
 		4918E9C1274DC2640086BA4E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918E9C0274DC2640086BA4E /* RegistrationController.swift */; };
 		4918E9C3274DCA4C0086BA4E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918E9C2274DCA4C0086BA4E /* CustomTextField.swift */; };
 		4918E9C5274DD1FF0086BA4E /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918E9C4274DD1FF0086BA4E /* AuthenticationViewModel.swift */; };
-		492CAD21274FF3B1003200E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 492CAD20274FF3B1003200E7 /* GoogleService-Info.plist */; };
 		492CAD23274FF54C003200E7 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD22274FF54C003200E7 /* ImageUploader.swift */; };
 		492CAD25274FF551003200E7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD24274FF551003200E7 /* AuthService.swift */; };
 		492CAD27275005A0003200E7 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD26275005A0003200E7 /* ProfileCell.swift */; };
 		492CAD29275005A7003200E7 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD28275005A7003200E7 /* ProfileHeader.swift */; };
+		492CAD2C275021DF003200E7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD2B275021DF003200E7 /* UserService.swift */; };
+		492CAD2E2750226A003200E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD2D2750226A003200E7 /* Constants.swift */; };
+		492CAD302750293E003200E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 492CAD2F2750293E003200E7 /* GoogleService-Info.plist */; };
+		492CAD3227502AED003200E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD3127502AED003200E7 /* User.swift */; };
+		492CAD3427502DC7003200E7 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD3327502DC7003200E7 /* ProfileHeaderViewModel.swift */; };
+		492CAD36275042CB003200E7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD35275042CB003200E7 /* UserCell.swift */; };
+		492CAD3827504FC0003200E7 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CAD3727504FC0003200E7 /* UserCellViewModel.swift */; };
 		4939568B274C6FEB005912DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568A274C6FEB005912DA /* AppDelegate.swift */; };
 		4939568D274C6FEB005912DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568C274C6FEB005912DA /* SceneDelegate.swift */; };
 		4939568F274C6FEB005912DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939568E274C6FEB005912DA /* ViewController.swift */; };
@@ -38,11 +44,17 @@
 		4918E9C0274DC2640086BA4E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		4918E9C2274DCA4C0086BA4E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4918E9C4274DD1FF0086BA4E /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		492CAD20274FF3B1003200E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		492CAD22274FF54C003200E7 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		492CAD24274FF551003200E7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		492CAD26275005A0003200E7 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		492CAD28275005A7003200E7 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		492CAD2B275021DF003200E7 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		492CAD2D2750226A003200E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		492CAD2F2750293E003200E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		492CAD3127502AED003200E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		492CAD3327502DC7003200E7 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		492CAD35275042CB003200E7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		492CAD3727504FC0003200E7 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		49395687274C6FEB005912DA /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4939568A274C6FEB005912DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4939568C274C6FEB005912DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +157,7 @@
 				49395693274C6FEC005912DA /* Assets.xcassets */,
 				49395695274C6FEC005912DA /* LaunchScreen.storyboard */,
 				49395698274C6FED005912DA /* Info.plist */,
-				492CAD20274FF3B1003200E7 /* GoogleService-Info.plist */,
+				492CAD2F2750293E003200E7 /* GoogleService-Info.plist */,
 			);
 			path = InstagramFirestoreTutorial;
 			sourceTree = "<group>";
@@ -154,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				493956B5274C8646005912DA /* Extensions.swift */,
+				492CAD2D2750226A003200E7 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 			children = (
 				492CAD22274FF54C003200E7 /* ImageUploader.swift */,
 				492CAD24274FF551003200E7 /* AuthService.swift */,
+				492CAD2B275021DF003200E7 /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -185,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				4918E9C4274DD1FF0086BA4E /* AuthenticationViewModel.swift */,
+				492CAD3327502DC7003200E7 /* ProfileHeaderViewModel.swift */,
+				492CAD3727504FC0003200E7 /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,6 +211,7 @@
 				492CAD2A275005AD003200E7 /* Profile */,
 				493956B1274C8573005912DA /* FeedCell.swift */,
 				4918E9C2274DCA4C0086BA4E /* CustomTextField.swift */,
+				492CAD35275042CB003200E7 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +219,7 @@
 		493956A4274C7015005912DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				492CAD3127502AED003200E7 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,7 +235,7 @@
 				49395683274C6FEB005912DA /* Sources */,
 				49395684274C6FEB005912DA /* Frameworks */,
 				49395685274C6FEB005912DA /* Resources */,
-				18895529FCFF8CCED680F8B8 /* [CP] Embed Pods Frameworks */,
+				69A2E742827E717C919FB5C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49395697274C6FEC005912DA /* LaunchScreen.storyboard in Resources */,
-				492CAD21274FF3B1003200E7 /* GoogleService-Info.plist in Resources */,
+				492CAD302750293E003200E7 /* GoogleService-Info.plist in Resources */,
 				49395694274C6FEC005912DA /* Assets.xcassets in Resources */,
 				49395692274C6FEB005912DA /* Main.storyboard in Resources */,
 			);
@@ -276,23 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18895529FCFF8CCED680F8B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		32F56AF8C2D0C9A9BE18B3B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +316,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		69A2E742827E717C919FB5C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -330,14 +348,20 @@
 				493956AC274C7248005912DA /* ImageSelectorController.swift in Sources */,
 				493956AE274C7250005912DA /* NotificationsController.swift in Sources */,
 				4918E9C5274DD1FF0086BA4E /* AuthenticationViewModel.swift in Sources */,
+				492CAD36275042CB003200E7 /* UserCell.swift in Sources */,
 				493956AA274C723C005912DA /* SearchController.swift in Sources */,
 				4939568B274C6FEB005912DA /* AppDelegate.swift in Sources */,
+				492CAD3227502AED003200E7 /* User.swift in Sources */,
 				493956B0274C7257005912DA /* ProfileController.swift in Sources */,
+				492CAD3427502DC7003200E7 /* ProfileHeaderViewModel.swift in Sources */,
+				492CAD2E2750226A003200E7 /* Constants.swift in Sources */,
 				493956A8274C7233005912DA /* FeedController.swift in Sources */,
+				492CAD3827504FC0003200E7 /* UserCellViewModel.swift in Sources */,
 				493956A6274C70A9005912DA /* MainTabController.swift in Sources */,
 				493956B6274C8646005912DA /* Extensions.swift in Sources */,
 				492CAD23274FF54C003200E7 /* ImageUploader.swift in Sources */,
 				492CAD25274FF551003200E7 /* AuthService.swift in Sources */,
+				492CAD2C275021DF003200E7 /* UserService.swift in Sources */,
 				492CAD27275005A0003200E7 /* ProfileCell.swift in Sources */,
 				4939568D274C6FEB005912DA /* SceneDelegate.swift in Sources */,
 				4918E9C1274DC2640086BA4E /* RegistrationController.swift in Sources */,

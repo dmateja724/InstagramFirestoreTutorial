@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>849595375515-0bbdf9264gsoifbjkqa7gl2p74hkqetc.apps.googleusercontent.com</string>
+	<string>162998352646-ej4n5aovr70j4h6a8iqb2h6tdjjc33gb.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.849595375515-0bbdf9264gsoifbjkqa7gl2p74hkqetc</string>
+	<string>com.googleusercontent.apps.162998352646-ej4n5aovr70j4h6a8iqb2h6tdjjc33gb</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDRoyqzDLejKbdNPrKcLon46A6Us5vNIx8</string>
+	<string>AIzaSyAsFYxHdX3KAvpI3J9kXfarTrOJgims6p4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>849595375515</string>
+	<string>162998352646</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.test-company.InstagramFirestoreTutorial</string>
 	<key>PROJECT_ID</key>
-	<string>instagramfirestoretutori-ca5d6</string>
+	<string>instagramfirestoretutori-e4fad</string>
 	<key>STORAGE_BUCKET</key>
-	<string>instagramfirestoretutori-ca5d6.appspot.com</string>
+	<string>instagramfirestoretutori-e4fad.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:849595375515:ios:2a43dd3790568d1a624b3e</string>
+	<string>1:162998352646:ios:74b5e3db0ae3c6bd703c87</string>
 </dict>
 </plist>
