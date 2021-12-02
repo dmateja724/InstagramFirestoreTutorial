@@ -11,19 +11,24 @@ class FeedCell: UICollectionViewCell {
     
     // MARK: - Properties
     
+    var viewModel: PostViewModel? {
+        didSet {
+            configure()
+        }
+    }
+    
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
         iv.isUserInteractionEnabled = true
-        iv.image = UIImage(named: "venom-7")
+        iv.backgroundColor = .lightGray
         return iv
     }()
     
     private lazy var userNameButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitleColor(.black, for: .normal)
-        button.setTitle("venom", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 13)
         button.addTarget(self, action: #selector(didTapUsername), for: .touchUpInside)
         return button
@@ -34,7 +39,6 @@ class FeedCell: UICollectionViewCell {
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
         iv.isUserInteractionEnabled = true
-        iv.image = UIImage(named: "venom-7")
         return iv
     }()
     
@@ -64,14 +68,12 @@ class FeedCell: UICollectionViewCell {
     
     private let likesLabel: UILabel = {
         let label = UILabel()
-        label.text = "1 Like"
         label.font = .boldSystemFont(ofSize: 13)
         return label
     }()
     
     private let captionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Some test caption for now..."
         label.font = .boldSystemFont(ofSize: 14)
         return label
     }()
@@ -122,6 +124,18 @@ class FeedCell: UICollectionViewCell {
     }
     
     // MARK: Helpers
+    
+    func configure() {
+        guard let viewModel = viewModel else {
+            return
+        }
+
+        captionLabel.text = viewModel.caption
+        postImageView.sd_setImage(with: viewModel.imageUrl)
+        profileImageView.sd_setImage(with: viewModel.userProfileImageUrl)
+        likesLabel.text = "\(viewModel.likesLabelTextString) Likes"
+        userNameButton.setTitle(viewModel.username, for: .normal)
+    }
     
     func configureActionButtons() {
         let stackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
