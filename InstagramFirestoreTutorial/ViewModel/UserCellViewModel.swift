@@ -8,21 +8,20 @@
 import Foundation
 
 struct UserCellViewModel {
-    
     private let user: User
-    
+
     var profileImageUrl: URL? {
-        return URL(string: user.profileImageUrl)
+        URL(string: user.profileImageUrl)
     }
-    
+
     var username: String {
-        return user.username
+        user.username
     }
-    
+
     var fullname: String {
-        return user.fullname
+        user.fullname
     }
-    
+
     init(user: User) {
         self.user = user
     }

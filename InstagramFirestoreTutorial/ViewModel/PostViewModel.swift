@@ -9,19 +9,19 @@ import Foundation
 
 struct PostViewModel {
     let post: Post
-    
+
     var imageUrl: URL? {
-        return URL(string: post.imageUrl)
+        URL(string: post.imageUrl)
     }
-    
+
     var caption: String {
-        return post.caption
+        post.caption
     }
-    
+
     var likes: Int {
-        return post.likes
+        post.likes
     }
-    
+
     var likesLabelTextString: String {
         if post.likes != 1 {
             return "\(post.likes) likes"
@@ -29,13 +29,13 @@ struct PostViewModel {
             return "\(post.likes) like"
         }
     }
-    
+
     var userProfileImageUrl: URL? {
-        return URL(string: post.ownerImageUrl)
+        URL(string: post.ownerImageUrl)
     }
-    
-    var username: String { return post.ownerUsername }
-    
+
+    var username: String { post.ownerUsername }
+
     init(post: Post) {
         self.post = post
     }

@@ -20,17 +20,17 @@ protocol AuthenticationViewModel {
 struct LoginViewModel: AuthenticationViewModel {
     var email: String?
     var password: String?
-    
+
     var formIsValid: Bool {
-        return email?.isEmpty == false && password?.isEmpty == false
+        email?.isEmpty == false && password?.isEmpty == false
     }
-    
+
     var buttonBackgroundColor: UIColor {
-        return formIsValid ? .purple : .purple.withAlphaComponent(0.1)
+        formIsValid ? .purple : .purple.withAlphaComponent(0.1)
     }
-    
+
     var buttonTitleColor: UIColor {
-        return formIsValid ? .white : UIColor(white: 1, alpha: 0.67)
+        formIsValid ? .white : UIColor(white: 1, alpha: 0.67)
     }
 }
 
@@ -39,16 +39,16 @@ struct RegistrationViewModel: AuthenticationViewModel {
     var password: String?
     var fullName: String?
     var userName: String?
-    
+
     var formIsValid: Bool {
-        return email?.isEmpty == false && password?.isEmpty == false && fullName?.isEmpty == false && userName?.isEmpty == false
+        email?.isEmpty == false && password?.isEmpty == false && fullName?.isEmpty == false && userName?.isEmpty == false
     }
-    
+
     var buttonBackgroundColor: UIColor {
-        return formIsValid ? .purple : .purple.withAlphaComponent(0.1)
+        formIsValid ? .purple : .purple.withAlphaComponent(0.1)
     }
-    
+
     var buttonTitleColor: UIColor {
-        return formIsValid ? .white : UIColor(white: 1, alpha: 0.67)
+        formIsValid ? .white : UIColor(white: 1, alpha: 0.67)
     }
 }
