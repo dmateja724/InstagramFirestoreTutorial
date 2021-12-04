@@ -18,11 +18,22 @@ class InputTextView: UITextView {
         }
     }
     
-    private let placeHolderLabel: UILabel = {
+   let placeHolderLabel: UILabel = {
         let label = UILabel()
         label.textColor = .lightGray
         return label
     }()
+    
+    var placeholderShouldCenter = true {
+        didSet {
+            if placeholderShouldCenter {
+                placeHolderLabel.anchor(left: leftAnchor, right: rightAnchor, paddingLeft: 8)
+                placeHolderLabel.centerY(inView: self)
+            } else {
+                placeHolderLabel.anchor(top: topAnchor, left: leftAnchor, paddingTop: 6, paddingLeft: 8)
+            }
+        }
+    }
     
     // MARK: - Lifecycle
     
