@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class FeedController: UICollectionViewController {
-    // MARK: Lifecycle
+    // MARK: Properties
 
     private var posts = [Post]() {
         didSet {
@@ -58,9 +58,9 @@ class FeedController: UICollectionViewController {
             self.checkIfUserLikedPost()
         }
     }
-    
+
     func checkIfUserLikedPost() {
-        self.posts.forEach { post in
+        posts.forEach { post in
             PostService.checkIfUserLikedPost(post: post) { didLike in
                 if let index = self.posts.firstIndex(where: { $0.postId == post.postId }) {
                     self.posts[index].didLike = didLike
@@ -119,13 +119,25 @@ extension FeedController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - FeedCellDelegate
+
 extension FeedController: FeedCellDelegate {
+    func cell(_: FeedCell, wantsToShowProfileFor uid: String) {
+        UserService.fetchUser(withUid: uid) { user in
+            let controller = ProfileController(user: user)
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+
     func cell(_: FeedCell, wantsToShowCommentsFor post: Post) {
         let controller = CommentController(post: post)
         navigationController?.pushViewController(controller, animated: true)
     }
 
     func cell(_ cell: FeedCell, didLike post: Post) {
+        guard let tab = tabBarController as? MainTabController else { return }
+        guard let user = tab.user else { return }
+
         cell.viewModel?.post.didLike.toggle()
 
         if post.didLike {
@@ -139,6 +151,8 @@ extension FeedController: FeedCellDelegate {
                 cell.likeButton.setImage(UIImage(named: "like_selected"), for: .normal)
                 cell.likeButton.tintColor = .red
                 cell.viewModel?.post.likes = post.likes + 1
+
+                NotificationService.uploadNotification(toUid: post.ownerUid, fromUser: user, type: .like, post: post)
             }
         }
     }

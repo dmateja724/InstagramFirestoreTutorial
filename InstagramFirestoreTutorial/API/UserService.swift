@@ -35,7 +35,7 @@ enum UserService {
         }
     }
 
-    static func unFollow(uid: String, completion: @escaping (FirestoreCompletion)) {
+    static func unfollow(uid: String, completion: @escaping (FirestoreCompletion)) {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
 
         COLLECTION_FOLLOWING.document(currentUid).collection("user-following").document(uid).delete { _ in
