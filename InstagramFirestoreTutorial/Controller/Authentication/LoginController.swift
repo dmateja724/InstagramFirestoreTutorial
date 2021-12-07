@@ -17,7 +17,7 @@ class LoginController: UIViewController {
     private var viewModel = LoginViewModel()
     weak var delegate: AuthenticationDelegate?
 
-    private let iconIMage: UIImageView = {
+    private let iconImage: UIImageView = {
         let iv = UIImageView(image: UIImage(named: "Instagram_logo_white"))
         iv.contentMode = .scaleAspectFill
         return iv
@@ -57,6 +57,7 @@ class LoginController: UIViewController {
     private let forgotPasswordButton: UIButton = {
         let button = UIButton(type: .system)
         button.attributedTitle(firstPart: "Forgot your password?", secondPart: "Get help signing in.")
+        button.addTarget(self, action: #selector(handleShowResetPassword), for: .touchUpInside)
         return button
     }()
 
@@ -97,6 +98,13 @@ class LoginController: UIViewController {
             self.delegate?.authenticationDidComplete()
         }
     }
+    
+    @objc func handleShowResetPassword() {
+        let controller = ResetPasswordController()
+        controller.delegate = self
+        controller.email = emailTextField.text
+        navigationController?.pushViewController(controller, animated: true)
+    }
 
     // MARK: - Helpers
 
@@ -105,16 +113,16 @@ class LoginController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
 
-        view.addSubview(iconIMage)
-        iconIMage.centerX(inView: view)
-        iconIMage.setDimensions(height: 80, width: 20)
-        iconIMage.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
+        view.addSubview(iconImage)
+        iconImage.centerX(inView: view)
+        iconImage.setDimensions(height: 80, width: 20)
+        iconImage.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
 
         let stack = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton, forgotPasswordButton])
         stack.axis = .vertical
         stack.spacing = 20
         view.addSubview(stack)
-        stack.anchor(top: iconIMage.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 32, paddingLeft: 32, paddingRight: 32)
+        stack.anchor(top: iconImage.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 32, paddingLeft: 32, paddingRight: 32)
 
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.centerX(inView: view)
@@ -127,10 +135,21 @@ class LoginController: UIViewController {
     }
 }
 
+//MARK: - FormViewModel
+
 extension LoginController: FormViewModel {
     func updateForm() {
         loginButton.backgroundColor = viewModel.buttonBackgroundColor
         loginButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
         loginButton.isEnabled = viewModel.formIsValid
+    }
+}
+
+//MARK: - ResetPasswordControllerDelegate
+
+extension LoginController: ResetPasswordControllerDelegate {
+    func controllerDidSendResetPasswordLink(_ controller: ResetPasswordController) {
+        navigationController?.popViewController(animated: true)
+        showMessage(withTitle: "Success", message: "We sent a link to your email to reset your password.")
     }
 }

@@ -92,7 +92,6 @@ class FeedCell: UICollectionViewCell {
 
     private let postTimeLabel: UILabel = {
         let label = UILabel()
-        label.text = "2 days ago"
         label.font = .systemFont(ofSize: 12)
         label.textColor = .lightGray
         return label
@@ -173,6 +172,8 @@ class FeedCell: UICollectionViewCell {
         likesLabel.text = viewModel.likesLabelTextString
         likeButton.tintColor = viewModel.likeButtonTintColor
         likeButton.setImage(viewModel.likeButtonImage, for: .normal)
+        
+        postTimeLabel.text = viewModel.timestampString
     }
 
     func configureActionButtons() {
